@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshit Kumar Sharma | Portfolio</title>
+
+    <!-- ICONS BOXICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Orbitron', sans-serif;
+        color: #ffffff;
+        background-color: #000000;
+        overflow-x: hidden;
+      }
+
+      .l-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(5px);
+      }
+
+      .nav__logo {
+        color: #0ff;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .nav__menu {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .nav__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+
+      .nav__link:hover {
+        color: #0ff;
+      }
+
+      .home {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        perspective: 1000px;
+      }
+
+      .home__parallax {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        transform-style: preserve-3d;
+      }
+
+      .home__parallax-img1 {
+        background-image: url('assets/img/earth-dark.jpg');
+        transform: translateZ(-200px) scale(3);
+      }
+
+      .home__title {
+        font-size: 4rem;
+        color: #0ff;
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+        z-index: 10;
+      }
+
+      .home__subtitle {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-top: 1rem;
+        text-shadow: 0 0 5px #fff;
+        z-index: 10;
+      }
+
+      .home__scroll a {
+        color: #0ff;
+        font-size: 2rem;
+        position: absolute;
+        bottom: 2rem;
+        animation: bounce 2s infinite;
+        z-index: 10;
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .l-section {
+        min-height: 100vh;
+        background: linear-gradient(#000000, #111111);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 2rem;
+      }
+
+      .section__data {
+        max-width: 800px;
+      }
+
+      .section__title {
+        font-size: 2.5rem;
+        color: #0ff;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 10px #0ff;
+      }
+
+      .section__text, .section__data p, .section__data li {
+        font-size: 1rem;
+        color: #ccc;
+        line-height: 1.6;
+      }
+
+      .section__img {
+        width: 400px;
+        margin-left: 3rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 20px #0ff;
+      }
+
+      .section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      h3 {
+        color: #0ff;
+        margin-top: 2rem;
+      }
+
+      ul {
+        margin-top: 0.5rem;
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <a href="#" class="nav__logo">Harshit</a>
+
+        
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HOME =====-->
+      <div class="home">
+        <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
+        <h1 class="parallax home__title" data-rellax-speed="-6">Harshit</h1>
+        <h3 class="parallax home__title" data-rellax-speed="-6">Kumar Sharma</h3>
+        <span class="parallax home__subtitle" data-rellax-speed="-5">Tech explorer</span>
+        <div class="home__scroll">
+          <a href="#section"><i class="bx bx-mouse"></i></a>
+        </div>
+      </div>
+
+      <!-- ===== SECTION =====-->
+      <section class="l-section" id="section">
+        <div class="section">
+          <div class="section__data">
+            <h2 class="section__title">HARSHIT KUMAR SHARMA</h2>
+            <p class="section__text">
+  Computer Science and Engineering Student<br />
+  Phagwara, Punjab, India | <a href="mailto:harshit369sharma2005@gmail.com">harshit369sharma2005@gmail.com</a> | +91-9441988146<br />
+  <a href="https://github.com/harshit2387" target="_blank">GitHub</a> |
+  <a href="https://www.linkedin.com/in/harshit-kumar-sharma-678825287/" target="_blank">LinkedIn</a> |
+  <a href="https://leetcode.com/u/harshit_2_0_0_5/" target="_blank">LeetCode</a>
+</p>
+
+            <h3>Professional Summary</h3>
+            <p>
+              Computer Science undergraduate with hands-on experience in embedded systems, real-time operating systems,
+              and software development. Built custom kernels and low-level firmware for microcontrollers, integrated
+              machine learning with sensor networks, and developed efficient, hardware-interfaced applications using C, C++,
+              and Python. Skilled in debugging, optimizing performance, and delivering reliable solutions for both software
+              and hardware platforms.
+            </p>
+
+            <h3>Education</h3>
+            <ul>
+              <li><strong>Lovely Professional University</strong>, B.Tech in Computer Science and Engineering, Aug 2023 – May 2027</li>
+              <li><strong>PM SHRI Kendriya Vidyalaya</strong>, 12th Grade (PCM), Score: 92%, Apr 2022 – Mar 2023</li>
+              <li><strong>PM SHRI Kendriya Vidyalaya</strong>, 10th Grade, Score: 86%, Apr 2020 – Mar 2021</li>
+            </ul>
+
+            <h3>Experience</h3>
+            <ul>
+              <li><strong>Intern Trainee, DIAT (DU), DRDO – Pune</strong>, June 2025 – July 2025
+                <ul>
+                  <li>Engineered a laser-based Underwater Optical Wireless Communication (UWOC) system achieving >85% classification accuracy in turbid environments (NTU&lt;6).</li>
+                  <li>Built a real-time signal processing pipeline using Raspberry Pi and Python, reducing noise interference by 40%.</li>
+                  <li>Trained ML models on &gt;50000 labeled sensor readings to classify turbidity levels with optimized thresholding.</li>
+                  <li>Designed a Tkinter-based GUI for live data visualization and real-time prediction display.</li>
+                  <li>Decreased bit error rate (BER) by 10% via dynamic threshold tuning and analog-to-digital optimization.</li>
+                </ul>
+              </li>
+              <li><strong>Volunteer Teacher Assistant, Saptashati Foundation, New Delhi</strong>, June 2024 – July 2024
+                <ul>
+                  <li>Guided and mentored over 20 students in basic computer programming and electronics.</li>
+                  <li>Designed simple projects to explain fundamental programming and electronics concepts.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3>Projects</h3>
+            <ul>
+              <li><strong>Custom Operating System – C Language, Bare Metal Programming</strong>, Jan 2025 – Apr 2025
+                <ul>
+                  <li>Developed core OS kernel for ATmega328P, including preemptive task scheduler, memory manager, UART debugging.</li>
+                  <li>Booted from custom bootloader without using `main()`—designed a separate compiler entry point (`harshit`).</li>
+                  <li>Logged task states over UART; reduced task latency by 30% through optimized scheduling logic.</li>
+                </ul>
+              </li>
+              <li><strong>Laser Communication System - (Embedded C, Arduino)</strong>, Aug 2024 – Oct 2024
+                <ul>
+                  <li>Engineered a laser-based communication system using LDR sensors and Morse code synchronization.</li>
+                  <li>Implemented signal encoding/decoding, calibrated analog input for intensity detection, and classified light pulses into alphanumeric characters.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3>Technical Skills</h3>
+            <ul>
+              <li><strong>Languages:</strong> C++, C, Java, Embedded C, Rust, C#</li>
+              <li><strong>Tools/Tech:</strong> Git, GitHub, Arduino, ESP32, Raspberry Pi</li>
+              <li><strong>Core Expertise:</strong> Embedded systems, Real-time OS, Low-level programming, Machine Learning</li>
+            </ul>
+
+            <h3>Activities and Interests</h3>
+            <ul>
+              <li>Member of University GitHub Club</li>
+              <li>Hackfest 2025 (Winner – Regional) | IoT-based Sustainable Business Monitoring System</li>
+              <li>Enthusiast in Bare-metal Programming, Memory-efficient Software, and Sensor Calibration Techniques</li>
+            </ul>
+          </div>
+
+          <img src="assets/img/imgm.jpg" alt="" class="section__img" />
+        </div>
+      </section>
+    </main>
+
+    <!-- RELLAX JS -->
+    <script src="assets/js/rellax.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script>
+      const rellax = new Rellax('.parallax');
+    </script>
+  </body>
+</html>
+    <script>
+      ScrollReveal().reveal('.home__title', { delay: 300, distance: '50px', duration: 1000 });
+      ScrollReveal().reveal('.home__subtitle', { delay: 500, distance: '50px', duration: 1000 });
+      ScrollReveal().reveal('.section__title', { delay: 300, distance: '50px', duration: 1000 });
+      ScrollReveal().reveal('.section__text', { delay: 500, distance: '50px', duration: 1000 });
+    </script>
+  </body>
+</html>
